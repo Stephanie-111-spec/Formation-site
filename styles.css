@@ -1,0 +1,245 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #F3EDE2;
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+
+header {
+   display: flex;
+   align-items: center;    /* centre horizontalement le contenu */
+   padding: 20px 30px;
+	background: #C3A995;
+	justify-content: space-between;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header img {
+   border-radius: 10px;
+	height: 45px;
+	padding-right: 10px;
+}
+
+header ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    font-size: 13px; /* un peu plus lisible */
+    text-decoration: none;
+    font-weight: bold;
+    color: #F3EDE2;
+}
+header a:hover {
+	color: red;
+}
+
+#hero {
+	text-align: center;
+	padding: 35px 20px;
+	
+}
+#hero h1 {
+	color: #CC2E7C;
+	font-family: "Playfair Display", serif;
+	letter-spacing: 1px;
+  font-size: 2rem;
+}
+#hero p {
+	font-style: italic;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 0.2px;
+}
+#hero button {
+	color: white;
+	font-weight: bold;
+	border: none;
+	padding: 8px;
+	background: #CC2E7C;
+	border-radius: 12px;
+	margin-bottom: 30px;
+	cursor: pointer;
+   transition: 0.3s;
+}
+#hero button:hover {
+	border: solid #CC2E7C;
+	background: white;
+	color: black;
+}
+
+#probleme {
+	text-align: center;
+	padding: 35px 20px;
+	max-width: 650px;
+	margin: auto;
+}
+#probleme h2 {
+	text-align: center;
+  	font-family: "Playfair Display", serif;
+  	color: #CC2E7C;
+  	margin-bottom: 15px;
+  	font-size: 25px;
+}
+#probleme p {
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 0.2px;
+	opacity: 0.9;
+}
+#transformation {
+	padding: 35px 20px;
+}
+#transformation h2 {
+	text-align: center;
+  	font-family: "Playfair Display", serif;
+  	color: #CC2E7C;
+  	margin-bottom: 15px;
+  	font-size: 25px;
+}
+#transformation ul {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+}
+#transformation p {
+	margin-bottom: 30px;
+	font-size: 17px;
+}
+#content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+#content h2 {
+	text-align: center;
+  	font-family: "Playfair Display", serif;
+  	color: #CC2E7C;
+  	margin-bottom: 15px;
+  	font-size: 25px;
+}
+#content .container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 25px;
+}
+#content .contenu {
+	background: white;
+	border: 1px solid #F7B7D3;
+	text-align: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	text-align: center;
+	padding: 15px;
+}
+
+#content .contenu-image {
+	width: 100%;
+	border-radius: 12px;
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+}
+
+#content .contenu-titre {
+	font-weight: 600;
+}
+
+#content p {
+	text-align: center;
+	font-style: italic;
+}
+
+#temoignages {
+	margin-bottom: 30px;
+	padding: 35px 20px;
+}
+#temoignages h2 {
+	text-align: center;
+  	font-family: "Playfair Display", serif;
+  	color: #CC2E7C;
+  	margin-bottom: 15px;
+  	font-size: 25px;
+}
+#temoignages .personne {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   margin-bottom: 10px;
+	background: white;
+	border-radius: 10px;
+   border: 1px solid #F7B7D3;
+	padding: 10px;
+}
+#temoignages .personne img {
+   width: 150px;
+   height: 100px;
+   border-radius: 50%;
+	
+}
+#cta {
+	margin-bottom: 80px;
+	padding: 35px 20px;
+}
+#cta h2 {
+	text-align: center;
+  	font-family: "Playfair Display", serif;
+  	color: #CC2E7C;
+  	margin-bottom: 15px;
+  	font-size: 25px;
+}
+
+#cta button {
+    background: #CC2E7C;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 14px 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+	 display: block;
+	 margin: 0 auto;
+}
+#cta button:hover {
+    background: white;
+    color: #CC2E7C;
+    border: 2px solid #CC2E7C;
+}
+#cta p {
+	font-style: italic;
+	padding: 10px;
+}
+
+footer {
+	background: #C3A995;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+ footer p:first-of-type {
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 0;
+	
+}
+footer p:last-of-type {
+	font-size: 10px;
+	text-align: center;
+	color: white;
+}
+
+@media (min-width: 768px) {
+  #content .container {
+     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  #cta button {
+    margin: 0; /* enleve le auto */
+  }
+}
